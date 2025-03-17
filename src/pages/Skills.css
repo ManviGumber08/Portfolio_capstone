@@ -1,0 +1,114 @@
+/* General Styles */
+.skills-container {
+    text-align: center;
+    padding: 80px 10%;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Fade-in Effect */
+  .skills-container.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease-in, transform 1s ease-in;
+  }
+  
+  .skills-container {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  /* Skills Heading */
+  .skills-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+    position: relative;
+  }
+  
+  /* Skill Items */
+  .skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideIn 1s ease-out forwards;
+  }
+  
+  .skill-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  /* Skill Content */
+  .skill-content {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%;
+    animation: slideIn 1s ease-in-out forwards;
+  }
+  
+  .skill-content h3 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .skill-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Skill Images */
+  .skill-image {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  }
+  
+  /* Soft Background Blend for First Image */
+  .skill-item:first-child .skill-image {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+    opacity: 0.1;
+    filter: blur(15px);
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  }
+  
+  /* Hover Effects */
+  .skill-item:hover .skill-image {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  /* Animations */
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
