@@ -43,10 +43,10 @@ function Home() {
           <a href="/Manvi_Gumber_Resume.pdf" className="button" download="Manvi_Gumber_Resume.pdf">
             Download Resume
           </a>
-          <a href="/Manvi_Gumber_Cover_Letter.pdf" className="button" target="_blank" rel="noopener noreferrer">
+          <a href="/Cover_Letter.pdf" className="button" target="_blank" rel="noopener noreferrer">
             View Cover Letter
           </a>
-          <a href="/Manvi_Gumber_Cover_Letter.pdf" className="button" download="Manvi_Gumber_Cover_Letter.pdf">
+          <a href="/Cover_Letter.pdf" className="button" download="Cover_Letter.pdf">
             Download Cover Letter
           </a>
         </div>

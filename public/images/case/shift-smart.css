@@ -3,16 +3,18 @@ body {
     font-family: 'Mulish', sans-serif;
     margin: 0;
     padding: 0;
-    color:black; /* RBC Blue */
-    background: #F7F9FC; /* Light background for better readability */
-    font-size: 18px; /* Increased text size */
+    color: black;
+    background: #F7F9FC; /* Light background */
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-
+/* Header */
 header h1 {
     font-size: 32px;
     font-weight: bold;
     margin: 0;
+    text-align: center;
 }
 
 /* Navigation */
@@ -42,7 +44,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, #003DA5, #0077C8); /* Gradient with RBC colors */
+    background: black;
     color: white;
     text-align: center;
     padding: 80px 20px;
@@ -51,7 +53,7 @@ nav ul li a:hover {
 }
 
 .hero h2 {
-    font-size: 40px;
+    font-size: 36px;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
@@ -72,12 +74,6 @@ section {
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
 }
-.hero h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    color: black; /* Changed from white to black */
-}
 
 section:hover {
     transform: scale(1.02);
@@ -96,16 +92,20 @@ h3 {
 
 ul, ol {
     line-height: 1.8;
+    padding-left: 20px;
 }
 
+/* Links */
 a {
     color: #003DA5;
     font-weight: bold;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 a:hover {
     color: #FEC524;
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -127,5 +127,30 @@ footer {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+        font-size: 18px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    section {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
     }
 }
